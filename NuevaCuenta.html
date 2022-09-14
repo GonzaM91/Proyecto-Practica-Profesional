@@ -50,49 +50,54 @@
       </div>
     </nav>
 
-    <!-- Slider de imagenes -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="Colegio-Holy-Cross_mujeres_en-San-Fernando_entrada-650x451.jpg" class="" alt="Escuela1">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
+    <!-- Formulario e imagen de perfil-->
+    <div class="modal-dialog text-center">
+        <div>
+            <div class="modal-content">
+                <div>
+                    <img src="./avatar login.jpg" id="imagen-login">
+                </div>
+                <form>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Seleccionar foto perfil</legend>
+                                <input type="file" name="imagen1" src="avatar login.jpg"/>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Elija Tipo de usuario</legend>
+                            <label>
+                                <input type="radio" name="Tipo-usuario" value="Docente" checked>Docente
+                            </label>
+                            <label>
+                                <input type="radio" name="Tipo-usuario" value="Escuela">Escuela
+                            </label>
+                        </fieldset>
+                        <input type="name" class="form-control" placeholder="Ingrese su Nombre y Apellido">
+                        <input type="text" class="form-control" placeholder="Ingrese su CUIL">
+                        <input type="email" class="form-control" placeholder="Ingrese su E-mail">
+                        <input type="text" class="form-control" placeholder="Ingrese su Número de teléfono">
+                        <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                        <select>
+                            <option>Rosario</option>
+                            <option>Buenos Aires</option>
+                            <option>Cordoba</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="Colegio-Norbridge_sede-Pilar.jpg" class="d-block" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="Colegio-Rio-de-la-Plata-Sur_en-Berazategui-650x408.jpg" class="d-block" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!-- Botones Login -->
+    <!-- Botones Aceptar/Cancelar -->
     <td>
       <form method="post">
-        <div id="botonLogin">
-          <a href="Login.html">
-            <button class="Login btn btn-primary" type="button">Login</button>
-          </a>
-          <a href="NuevaCuenta.html">
-            <button class="Login-1 btn btn-primary" type="button">Nueva Cuenta</button>
-          </a>
+        <div id="botonCancelar">
+            <a href="./index.html">
+                <button class="Login btn btn-primary" type="button">Cancelar</button>
+            </a>
+        </div>
+        <div id="botonAceptar">
+          <button class="Login btn btn-primary" type="button">Aceptar</button>
         </div>
       </form>     
     </td>

@@ -74,11 +74,11 @@
                                 <input type="radio" name="Tipo-usuario" value="Escuela">Escuela
                             </label>
                         </fieldset>
-                        <input type="name" class="form-control" placeholder="Ingrese su Nombre y Apellido">
-                        <input type="text" class="form-control" placeholder="Ingrese su CUIL">
-                        <input type="email" class="form-control" placeholder="Ingrese su E-mail" onpaste="verificarcaracter();" onkeyup="cverificarcaracter();">
-                        <input type="text" class="form-control" placeholder="Ingrese su Número de teléfono">
-                        <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                        <input type="name" class="form-control" placeholder="Ingrese su Nombre y Apellido" required autofocus>
+                        <input type="text" class="form-control" placeholder="Ingrese su CUIL" required autofocus>
+                        <input type="email" class="form-control" placeholder="Ingrese su E-mail" maxlength="100" onpaste="verificarcaracter();" onkeyup="verificarcaracter();" required autofocus>
+                        <input type="text" class="form-control" placeholder="Ingrese su Número de teléfono" required autofocus>
+                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" required autofocus>
                         <select>
                             <option>Rosario</option>
                             <option>Buenos Aires</option>

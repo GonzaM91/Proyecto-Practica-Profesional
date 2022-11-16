@@ -81,3 +81,7 @@ input{
 #map {
     height: 100%;
 }
+
+#btn-enviar{
+    margin-right: 75px !important;
+}
